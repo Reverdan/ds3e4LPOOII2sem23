@@ -1,0 +1,11 @@
+C:\Users\Rever\Documents\GitHub\ds3e4LPOOII2sem23\CRUDPessoas\CRUDPessoas\bin\Debug\CRUDPessoas.exe.config
+C:\Users\Rever\Documents\GitHub\ds3e4LPOOII2sem23\CRUDPessoas\CRUDPessoas\bin\Debug\CRUDPessoas.exe
+C:\Users\Rever\Documents\GitHub\ds3e4LPOOII2sem23\CRUDPessoas\CRUDPessoas\bin\Debug\CRUDPessoas.pdb
+C:\Users\Rever\Documents\GitHub\ds3e4LPOOII2sem23\CRUDPessoas\CRUDPessoas\obj\Debug\CRUDPessoas.csprojResolveAssemblyReference.cache
+C:\Users\Rever\Documents\GitHub\ds3e4LPOOII2sem23\CRUDPessoas\CRUDPessoas\obj\Debug\CRUDPessoas.Properties.Resources.resources
+C:\Users\Rever\Documents\GitHub\ds3e4LPOOII2sem23\CRUDPessoas\CRUDPessoas\obj\Debug\CRUDPessoas.csproj.GenerateResource.Cache
+C:\Users\Rever\Documents\GitHub\ds3e4LPOOII2sem23\CRUDPessoas\CRUDPessoas\obj\Debug\CRUDPessoas.exe
+C:\Users\Rever\Documents\GitHub\ds3e4LPOOII2sem23\CRUDPessoas\CRUDPessoas\obj\Debug\CRUDPessoas.pdb
+C:\Users\Rever\Documents\GitHub\ds3e4LPOOII2sem23\CRUDPessoas\CRUDPessoas\obj\Debug\CRUDPessoas.Form1.resources
+C:\Users\Rever\Documents\GitHub\ds3e4LPOOII2sem23\CRUDPessoas\CRUDPessoas\obj\Debug\CRUDPessoas.Apresentacao.frmCadastro.resources
+C:\Users\Rever\Documents\GitHub\ds3e4LPOOII2sem23\CRUDPessoas\CRUDPessoas\obj\Debug\CRUDPessoas.Apresentacao.frmPEE.resources
