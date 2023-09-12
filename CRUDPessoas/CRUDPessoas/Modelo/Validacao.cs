@@ -12,6 +12,7 @@ namespace CRUDPessoas.Modelo
 
         public void validarDadosPessoa(List<String> listaDadosPessoa)
         {
+            this.mensagem = "";
             if (listaDadosPessoa[0].Length < 3)
                 this.mensagem += "Nome deve ter mais que 3 caracteres\n";
             if (listaDadosPessoa[0].Length > 50)

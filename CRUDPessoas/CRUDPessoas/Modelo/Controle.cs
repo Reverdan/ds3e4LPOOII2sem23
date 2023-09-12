@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CRUDPessoas.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,13 @@ namespace CRUDPessoas.Modelo
             validacao.validarDadosPessoa(listaDadosPessoa);
             if (validacao.mensagem.Equals(""))
             {
-
+                Pessoa pessoa = new Pessoa();
+                pessoa.nome = listaDadosPessoa[0];
+                pessoa.rg = listaDadosPessoa[1];
+                pessoa.cpf = listaDadosPessoa[2];
+                PessoaDAO pessoaDAO = new PessoaDAO();
+                pessoaDAO.cadastrarPessoa(pessoa);
+                this.mensagem = pessoaDAO.mensagem;
             }
             else
             {
