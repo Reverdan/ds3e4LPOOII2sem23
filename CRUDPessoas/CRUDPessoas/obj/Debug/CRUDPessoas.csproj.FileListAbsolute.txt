@@ -22,3 +22,5 @@ C:\Users\Rever\Documents\Visual Studio 2015\Projects\CRUDPessoas\CRUDPessoas\obj
 C:\Users\Rever\Documents\Visual Studio 2015\Projects\CRUDPessoas\CRUDPessoas\obj\Debug\CRUDPessoas.Apresentacao.frmPEE.resources
 C:\Users\Rever\Documents\Visual Studio 2015\Projects\CRUDPessoas\CRUDPessoas\obj\Debug\CRUDPessoas.Properties.Resources.resources
 C:\Users\Rever\Documents\Visual Studio 2015\Projects\CRUDPessoas\CRUDPessoas\obj\Debug\CRUDPessoas.csproj.GenerateResource.Cache
+C:\Users\Rever\Documents\GitHub\ds3e4LPOOII2sem23\CRUDPessoas\CRUDPessoas\bin\Debug\MySql.Data.dll
+C:\Users\Rever\Documents\GitHub\ds3e4LPOOII2sem23\CRUDPessoas\CRUDPessoas\bin\Debug\MySql.Data.xml
