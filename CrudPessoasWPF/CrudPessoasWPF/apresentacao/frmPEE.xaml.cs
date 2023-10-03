@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CRUDPessoas.Modelo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,35 @@ namespace CrudPessoasWPF.apresentacao
         public frmPEE()
         {
             InitializeComponent();
+        }
+
+        private void btnPesquisarId_Click(object sender, RoutedEventArgs e)
+        {
+            Controle controle = new Controle();
+            Pessoa pessoa = controle.pesquisaPessoaPorId(txbId.Text);
+            if (controle.mensagem.Equals(""))
+            {
+                txbNome.Text = pessoa.nome;
+                txbRg.Text = pessoa.rg;
+                txbCpf.Text = pessoa.cpf;
+            }
+            else
+            {
+                MessageBox.Show(controle.mensagem);
+            }
+        }
+
+        private void btnEditar_Click(object sender, RoutedEventArgs e)
+        {
+            Controle controle = new Controle();
+            List<String> listaDadosPessoas = new List<string>();
+            listaDadosPessoas.Add(txbId.Text);
+            listaDadosPessoas.Add(txbNome.Text);
+            listaDadosPessoas.Add(txbRg.Text);
+            listaDadosPessoas.Add(txbCpf.Text);
+            controle.editarPessoa(listaDadosPessoas);
+            MessageBox.Show(controle.mensagem);
+
         }
     }
 }

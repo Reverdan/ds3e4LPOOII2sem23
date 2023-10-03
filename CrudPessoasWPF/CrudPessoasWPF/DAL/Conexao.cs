@@ -11,7 +11,7 @@ namespace CRUDPessoas.DAL
     {
         private MySqlConnection connection;
         private String stringConexao = "server=localhost;" +
-            "database = aulapoo; uid = root; password = rever489";
+            "database = lpoo; uid = root; password = rever489";
 
         public Conexao()
         {

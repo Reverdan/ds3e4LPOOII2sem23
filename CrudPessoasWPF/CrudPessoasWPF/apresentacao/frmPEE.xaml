@@ -9,7 +9,7 @@
     <Grid>
         <Label x:Name="lblId" Content="ID" HorizontalAlignment="Left" Margin="30,26,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txbId" HorizontalAlignment="Left" Height="23" Margin="90,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnPesquisarId" Content="Pesquisar" HorizontalAlignment="Left" Margin="383,25,0,0" VerticalAlignment="Top" Width="103"/>
+        <Button x:Name="btnPesquisarId" Content="Pesquisar" HorizontalAlignment="Left" Margin="383,25,0,0" VerticalAlignment="Top" Width="103" Click="btnPesquisarId_Click"/>
         <Label x:Name="lblNome" Content="Nome" HorizontalAlignment="Left" Margin="30,96,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txbNome" HorizontalAlignment="Left" Height="23" Margin="90,96,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="271"/>
         <Button x:Name="btnPesquisarNome" Content="Pesquisar" HorizontalAlignment="Left" Margin="383,96,0,0" VerticalAlignment="Top" Width="103"/>
@@ -17,7 +17,7 @@
         <TextBox x:Name="txbRg" HorizontalAlignment="Left" Height="23" Margin="90,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="89"/>
         <Label x:Name="lblCpf" Content="CPF" HorizontalAlignment="Left" Margin="217,137,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txbCpf" HorizontalAlignment="Left" Height="23" Margin="272,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="89"/>
-        <Button x:Name="btnEditar" Content="Editar" HorizontalAlignment="Left" Margin="411,214,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnEditar" Content="Editar" HorizontalAlignment="Left" Margin="411,214,0,0" VerticalAlignment="Top" Width="75" Click="btnEditar_Click"/>
         <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="30,214,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>

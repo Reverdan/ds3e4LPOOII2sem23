@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CRUDPessoas.Modelo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,18 @@ namespace CrudPessoasWPF.apresentacao
         public frmCadastrar()
         {
             InitializeComponent();
+        }
+
+        private void btnCadastrar_Click(object sender, RoutedEventArgs e)
+        {
+            Controle controle = new Controle();
+            List<String> listaDadosPessoa = new List<string>();
+            listaDadosPessoa.Add("0");
+            listaDadosPessoa.Add(txbNome.Text);
+            listaDadosPessoa.Add(txbRg.Text);
+            listaDadosPessoa.Add(txbCpf.Text);
+            controle.cadastrarPessoa(listaDadosPessoa);
+            MessageBox.Show(controle.mensagem);
         }
     }
 }
