@@ -18,7 +18,7 @@
         <Label x:Name="lblCpf" Content="CPF" HorizontalAlignment="Left" Margin="217,137,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txbCpf" HorizontalAlignment="Left" Height="23" Margin="272,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="89"/>
         <Button x:Name="btnEditar" Content="Editar" HorizontalAlignment="Left" Margin="411,214,0,0" VerticalAlignment="Top" Width="75" Click="btnEditar_Click"/>
-        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="30,214,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="30,214,0,0" VerticalAlignment="Top" Width="75" Click="btnExcluir_Click"/>
 
     </Grid>
 </Window>

@@ -73,5 +73,23 @@ namespace CRUDPessoas.Modelo
             }
 
         }
+
+        public void excluirPessoa(String idPessoa)
+        {
+            Validacao validacao = new Validacao();
+            Pessoa pessoa = new Pessoa();
+            validacao.validarIdPessoa(idPessoa);
+            if (validacao.mensagem.Equals(""))
+            {
+                PessoaDAO pessoaDAO = new PessoaDAO();
+                pessoa.idPessoa = validacao.id;
+                pessoaDAO.excluirPessoa(pessoa);
+                this.mensagem = pessoaDAO.mensagem;
+            }
+            else
+            {
+                this.mensagem = validacao.mensagem;
+            }
+        }
     }
 }

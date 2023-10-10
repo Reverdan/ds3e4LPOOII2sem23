@@ -53,5 +53,17 @@ namespace CrudPessoasWPF.apresentacao
             MessageBox.Show(controle.mensagem);
 
         }
+
+        private void btnExcluir_Click(object sender, RoutedEventArgs e)
+        {
+            Controle controle = new Controle();
+            MessageBoxResult resposta = MessageBox.Show("Deseja realmente excluir?",
+                "Confirmação", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
+            if (resposta == MessageBoxResult.OK)
+            {
+                controle.excluirPessoa(txbId.Text);
+                MessageBox.Show(controle.mensagem);
+            }
+        }
     }
 }

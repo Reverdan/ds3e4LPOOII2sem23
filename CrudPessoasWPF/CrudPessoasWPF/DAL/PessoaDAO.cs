@@ -96,5 +96,25 @@ namespace CRUDPessoas.DAL
                 this.mensagem = "Erro de BD";
             }
         }
+
+        public void excluirPessoa(Pessoa pessoa)
+        {
+            this.mensagem = "";
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = @"delete from pessoas 
+                                where idPessoa = @id";
+            cmd.Parameters.AddWithValue("@id", pessoa.idPessoa);
+            try
+            {
+                cmd.Connection = con.conectar();
+                cmd.ExecuteNonQuery();
+                con.desconectar();
+                this.mensagem = "Pessoa excluída com sucesso!";
+            }
+            catch (Exception e)
+            {
+                this.mensagem = "Erro de BD";
+            }
+        }
     }
 }
