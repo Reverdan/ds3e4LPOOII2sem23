@@ -73,6 +73,49 @@ namespace CRUDPessoas.DAL
             return pessoa;
         }
 
+        public List<Pessoa> pesquisaPessoaPorNome(Pessoa pessoa)
+        {
+            this.mensagem = "";
+            MySqlCommand cmd = new MySqlCommand();
+            MySqlDataReader dr;
+            List<Pessoa> listaPessoas = new List<Pessoa>();
+            cmd.CommandText = @"select * from pessoas 
+                    where nome like @nome";
+            cmd.Parameters.AddWithValue("@nome", pessoa.nome + "%");
+            try
+            {
+                cmd.Connection = con.conectar();
+                dr = cmd.ExecuteReader();
+                if (dr.HasRows)
+                {
+                    while (dr.Read())
+                    {
+                        Pessoa p = new Pessoa();
+                        p.idPessoa = Convert.ToInt32(dr["idPessoa".ToString()]);
+                        p.nome = dr["nome"].ToString();
+                        p.rg = dr["rg"].ToString();
+                        p.cpf = dr["cpf"].ToString();
+                        listaPessoas.Add(p);
+                    }
+                    dr.Close();
+                }
+                else
+                {
+                    this.mensagem = "Não existe este Nome";
+                }
+
+            }
+            catch (Exception e)
+            {
+                this.mensagem = "Erro de BD";
+            }
+            finally
+            {
+                con.desconectar();
+            }
+            return listaPessoas;
+        }
+
         public void editarPessoa(Pessoa pessoa)
         {
             this.mensagem = "";

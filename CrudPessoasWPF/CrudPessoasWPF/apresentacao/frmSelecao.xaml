@@ -1,0 +1,14 @@
+﻿<Window x:Class="CrudPessoasWPF.apresentacao.frmSelecao"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrudPessoasWPF.apresentacao"
+        mc:Ignorable="d"
+        Title="Selecao" Height="300" Width="488.077">
+    <Grid HorizontalAlignment="Left" Height="270" Margin="0,0,0,-1" VerticalAlignment="Top" Width="478">
+        <DataGrid x:Name="dgvPessoas" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Height="146" Width="458"/>
+        <Button x:Name="btnPesquisar" Content="Pesquisar" HorizontalAlignment="Left" Margin="393,207,0,0" VerticalAlignment="Top" Width="75" Click="btnPesquisar_Click"/>
+    </Grid>
+
+</Window>

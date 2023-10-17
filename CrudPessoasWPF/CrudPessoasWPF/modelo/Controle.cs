@@ -52,6 +52,24 @@ namespace CRUDPessoas.Modelo
             return pessoa;
         }
 
+        public List<Pessoa> pesquisaPessoaPorNome(String nome)
+        {
+            Pessoa pessoa = new Pessoa();
+            List<Pessoa> listaPessoas = new List<Pessoa>();
+            if (!nome.Equals(""))
+            {
+                PessoaDAO pessoaDAO = new PessoaDAO();
+                pessoa.nome = nome;
+                listaPessoas = pessoaDAO.pesquisaPessoaPorNome(pessoa);
+                this.mensagem = pessoaDAO.mensagem;
+            }
+            else
+            {
+                this.mensagem = "Nome inválido";
+            }
+            return listaPessoas;
+        }
+
         public void editarPessoa(List<String> listaDadosPessoa)
         {
             Validacao validacao = new Validacao();

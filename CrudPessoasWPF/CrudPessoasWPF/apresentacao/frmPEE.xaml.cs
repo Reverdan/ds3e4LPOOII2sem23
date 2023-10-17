@@ -1,4 +1,5 @@
 ﻿using CRUDPessoas.Modelo;
+using CrudPessoasWPF.modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -63,6 +64,33 @@ namespace CrudPessoasWPF.apresentacao
             {
                 controle.excluirPessoa(txbId.Text);
                 MessageBox.Show(controle.mensagem);
+            }
+        }
+
+        private void btnPesquisarNome_Click(object sender, RoutedEventArgs e)
+        {
+            Controle controle = new Controle();
+            List<Pessoa> listaPessoas = controle.pesquisaPessoaPorNome(txbNome.Text);
+            if (listaPessoas == null || listaPessoas.Count() == 0)
+            {
+                MessageBox.Show(controle.mensagem);
+            }
+            if (listaPessoas.Count() == 1)
+            {
+                txbId.Text = listaPessoas[0].idPessoa.ToString();
+                txbNome.Text = listaPessoas[0].nome;
+                txbRg.Text = listaPessoas[0].rg;
+                txbCpf.Text = listaPessoas[0].cpf;
+            }
+            if (listaPessoas.Count() > 1)
+            {
+                Estaticos.listaPessoa = listaPessoas;
+                frmSelecao frmS = new frmSelecao();
+                frmS.ShowDialog();
+                txbId.Text = Estaticos.pessoa.idPessoa.ToString();
+                txbNome.Text = Estaticos.pessoa.nome;
+                txbRg.Text = Estaticos.pessoa.rg;
+                txbCpf.Text = Estaticos.pessoa.cpf;
             }
         }
     }
